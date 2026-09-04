@@ -21,6 +21,7 @@ The homepage combines automatic feeds with deliberately selected editorial featu
 Create or retain the following categories and slugs:
 
 * Journeys: journeys
+* Homepage Hero: homepage-hero
 * Field Notes: field-notes
 * Places: places
 * Photography: photography
