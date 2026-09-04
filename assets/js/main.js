@@ -70,4 +70,23 @@
   const updateHeader = () => header.classList.toggle('is-scrolled', scrollY > innerHeight * .65);
   updateHeader();
   addEventListener('scroll', updateHeader, { passive: true });
+
+  const preview = document.querySelector('[data-place-image]');
+  document.querySelectorAll('[data-image]').forEach(link => {
+    const swap = () => {
+      if (!preview) return;
+      const source = link.dataset.image.replace('assets/images/', `${location.origin}/wp-content/themes/sierra-madre/assets/images/`);
+      preview.classList.add('is-changing');
+      setTimeout(() => { preview.src = source; preview.classList.remove('is-changing'); }, 140);
+    };
+    link.addEventListener('mouseenter', swap);
+    link.addEventListener('focus', swap);
+  });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in-view'); observer.unobserve(entry.target); }
+    }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+  }
 })();

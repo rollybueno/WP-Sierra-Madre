@@ -19,24 +19,23 @@ add_action( 'init', function () {
 
 /* Local's development runtime does not auto-register theme patterns reliably. */
 add_action( 'init', function () {
-	if ( WP_Block_Patterns_Registry::get_instance()->is_registered( 'sierra-madre/home-hero' ) ) {
-		return;
-	}
-
-	$image = esc_url( get_theme_file_uri( 'assets/images/hero-01.jpg' ) );
-	ob_start();
-	include get_theme_file_path( 'patterns/home-hero.php' );
-	$content = ob_get_clean();
-
-	register_block_pattern(
-		'sierra-madre/home-hero',
-		array(
-			'title'      => __( 'Homepage hero', 'sierra-madre' ),
-			'categories' => array( 'sierra-madre' ),
-			'content'    => $content,
-			'inserter'   => false,
-		)
+	$patterns = array(
+		'home-hero' => __( 'Homepage hero', 'sierra-madre' ),
+		'home-body' => __( 'Homepage editorial sections', 'sierra-madre' ),
 	);
+
+	foreach ( $patterns as $slug => $title ) {
+		$name = 'sierra-madre/' . $slug;
+		if ( WP_Block_Patterns_Registry::get_instance()->is_registered( $name ) ) {
+			continue;
+		}
+		ob_start();
+		include get_theme_file_path( 'patterns/' . $slug . '.php' );
+		register_block_pattern( $name, array(
+			'title' => $title, 'categories' => array( 'sierra-madre' ),
+			'content' => ob_get_clean(), 'inserter' => false,
+		) );
+	}
 }, 20 );
 
 add_action( 'wp_enqueue_scripts', function () {

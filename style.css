@@ -8,7 +8,8 @@ Text Domain: sierra-madre
 */
 
 /* Gutenberg adds a root wrapper that the static prototype does not have. */
-.wp-site-blocks { padding: 0; }
+.wp-site-blocks { padding: 0 !important; margin: 0 !important; }
+body { padding: 0 !important; }
 .wp-site-blocks > * { margin-block-start: 0; }
 .wp-site-blocks main { margin-block-start: 0; }
 .hero.wp-block-cover.alignfull { width: 100%; max-width: none; margin: 0 !important; }
