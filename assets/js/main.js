@@ -75,7 +75,7 @@
   document.querySelectorAll('[data-image]').forEach(link => {
     const swap = () => {
       if (!preview) return;
-      const source = link.dataset.image.replace('assets/images/', `${location.origin}/wp-content/themes/sierra-madre/assets/images/`);
+      const source = link.dataset.image;
       preview.classList.add('is-changing');
       setTimeout(() => { preview.src = source; preview.classList.remove('is-changing'); }, 140);
     };
