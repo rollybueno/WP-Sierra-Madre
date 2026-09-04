@@ -12,6 +12,17 @@ Updated: 5 September 2026
 - PHP syntax, JSON parsing, JavaScript syntax, and whitespace checks passed. Full editor/admin-bar and missing-content QA remain open.
 - Structured intro metadata and photography-credit modeling remain pending; the current taxonomy mapping is still temporary.
 
+## Page-template checkpoint
+
+- `templates/page.html` now provides a dynamic title, optional featured image, and native Post Content with a 660px prose measure. Existing page content is preserved.
+- `templates/editorial-page.html` is an optional content-only template registered in `theme.json`. Pair it with the Complete editorial page pattern, which supplies the visible H1.
+- Five reusable page-section patterns and one assembled starter pattern cover the complete `HTML/page.html` composition. Setup is documented in `readme.txt`.
+- Local review draft: **About Sierra Madre**, ID **1868**, slug `sierra-madre-editorial-preview`, assigned to **Editorial page**. Edit at `http://localhost:10058/wp-admin/post.php?post=1868&action=edit`. It is not published, and the existing About test page was not replaced.
+- WordPress's browser block parser validated all 37 blocks in the assembled pattern and its save serialization with no invalid blocks.
+- The complete editorial preview and the existing Sample Page were compared at 390, 768, 1440, and 1920px without horizontal overflow. The editorial preview used WordPress-rendered content without publishing the draft. All six main editorial section heights match the prototype within subpixel rounding at the four widths. Homepage smoke checks at 390 and 1440px also showed no horizontal overflow.
+- The contact email is still `field@sierramadre.example`; set the real address and contributor destination before publishing. Replace starter photography via the Media Library.
+- Theme Check was run and currently fails release packaging: missing screenshot and Author/License/License URI/Tested up to stylesheet headers. It also reports a missing copyright notice and eight large-image warnings across the prototype and theme asset copies. These remain release tasks.
+
 ## Current baseline
 
 - The FSE foundation, global design tokens, fonts, header, footer, menu overlay, and search overlay are implemented.
@@ -27,6 +38,7 @@ Updated: 5 September 2026
 |---|---|---|
 | `HTML/index.html` | `templates/front-page.html` | Wired; continue regression QA when shared styles change |
 | `HTML/single.html` | `templates/single.html` | Wired; fidelity refinement remains |
+| `HTML/page.html` | `templates/page.html` + optional `templates/editorial-page.html` | Wired with reusable native editorial patterns |
 | Global header | `parts/header.html` | Wired and dynamic |
 | Global footer | `parts/footer.html` | Wired and dynamic |
 
@@ -45,23 +57,16 @@ Updated: 5 September 2026
 
 Implement these in this order:
 
-1. `HTML/page.html` → `templates/page.html`
-   - Editorial page introduction
-   - Panoramic image
-   - Manifesto/text feature
-   - Numbered principles
-   - Contributors feature
-   - Contact call-to-action
-2. `HTML/archive.html` → `templates/archive.html`
+1. `HTML/archive.html` → `templates/archive.html`
    - Dynamic archive title and description
    - Category navigation
    - Inherited Query Loop/Post Template
    - Pagination and empty state
-3. `HTML/search.html` → `templates/search.html`
+2. `HTML/search.html` → `templates/search.html`
    - Dynamic search title and form
    - Inherited results Query Loop
    - Pagination and no-results state
-4. `HTML/404.html` → `templates/404.html`
+3. `HTML/404.html` → `templates/404.html`
    - Prototype error composition
    - Working home/search actions
 
@@ -96,4 +101,4 @@ The conceptual reusable-pattern inventory remains in `docs/pattern-audit.md`. Ar
 
 ## Recommended next session
 
-Start by finishing the single-template visual comparison on `/field-journal-01/`, commit that refinement, then implement `page.html`. Keeping one template per checkpoint will make visual regressions and content-model decisions easier to isolate.
+Review the unpublished editorial page (ID 1868), then implement `HTML/archive.html` as a native inherited Query Loop in `templates/archive.html`. Single-post visual/layout refinements are checkpointed in `03aaa98`. Keep structured story metadata, photography-credit modeling, full editor/admin-bar QA, and Theme Check release findings on the follow-up list.

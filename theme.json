@@ -94,6 +94,9 @@
       "core/button": { "border": { "radius": "0" } }
     }
   },
+  "customTemplates": [
+    { "name": "editorial-page", "title": "Editorial page", "postTypes": ["page"] }
+  ],
   "templateParts": [
     { "name": "header", "title": "Header", "area": "header" },
     { "name": "footer", "title": "Footer", "area": "footer" }

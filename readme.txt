@@ -72,6 +72,20 @@ Homepage queries should fail gracefully when no matching post exists. Installing
 3. Open Appearance > Editor to configure navigation and homepage queries.
 4. Assign posts to the documented categories and add featured images.
 
+== Pages and editorial layouts ==
+
+The default Page template displays the page title, optional featured image, and editable page content. Existing pages keep their content and use this template automatically unless another template is assigned.
+
+To build a page matching the editorial prototype:
+
+1. Create or edit a page and select the Editorial page template in the page settings.
+2. Insert the Complete editorial page pattern from the Sierra Madre category. This includes the page's visible H1, so the Editorial page template does not add another title.
+3. Edit the introduction, panoramic image, manifesto, numbered principles, contributors, and contact sections directly in the page editor. Each section is also available as a separate pattern.
+4. Replace the sample contact email and contributor link with your real destinations. The starter contributor link searches the site; the work-with-us link leads to the contact section.
+5. Replace the starter photographs using the Image block's Media Library control before publishing production content. The bundled starter URLs are tied to the theme directory.
+
+These are unsynced patterns: editing one page does not change another page. Activating the theme does not create pages or assign templates to existing content.
+
 == Frequently Asked Questions ==
 
 = Does the theme register custom post types? =

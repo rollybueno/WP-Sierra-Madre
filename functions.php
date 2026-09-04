@@ -26,6 +26,12 @@ add_action( 'init', function () {
 		'story-article-continuation' => __( 'Story article continuation with field note', 'sierra-madre' ),
 		'story-full-image' => __( 'Story full-width image', 'sierra-madre' ),
 		'story-diptych' => __( 'Story image diptych', 'sierra-madre' ),
+		'page-intro' => __( 'Editorial page introduction', 'sierra-madre' ),
+		'page-panorama' => __( 'Editorial panoramic image', 'sierra-madre' ),
+		'page-manifesto' => __( 'Editorial manifesto', 'sierra-madre' ),
+		'page-principles' => __( 'Numbered editorial principles', 'sierra-madre' ),
+		'page-contributors' => __( 'Contributors and contact', 'sierra-madre' ),
+		'page-editorial' => __( 'Complete editorial page', 'sierra-madre' ),
 	);
 
 	foreach ( $patterns as $slug => $title ) {
@@ -35,10 +41,15 @@ add_action( 'init', function () {
 		}
 		ob_start();
 		include get_theme_file_path( 'patterns/' . $slug . '.php' );
-		register_block_pattern( $name, array(
+		$properties = array(
 			'title' => $title, 'categories' => array( 'sierra-madre' ),
-			'content' => ob_get_clean(), 'inserter' => false,
-		) );
+			'content' => ob_get_clean(), 'inserter' => str_starts_with( $slug, 'page-' ),
+		);
+		if ( 'page-editorial' === $slug ) {
+			$properties['postTypes'] = array( 'page' );
+			$properties['blockTypes'] = array( 'core/post-content' );
+		}
+		register_block_pattern( $name, $properties );
 	}
 }, 20 );
 

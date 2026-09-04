@@ -139,3 +139,51 @@ body.admin-bar .overlay { top: 32px; }
   .menu-panel .menu-navigation .wp-block-navigation__container { grid-template-columns: 1fr; }
   .search-panel .wp-block-search { margin-top: 14vh; }
 }
+
+/* Native page blocks and the editable editorial-page patterns. */
+.page:not(.home) { background: var(--wp--preset--color--paper); }
+.page:not(.home) .site-header { position: relative; color: var(--ink); border-color: var(--line); }
+.page:not(.home) .site-header.is-scrolled { position: fixed; }
+.page:not(.home).admin-bar .site-header:not(.is-scrolled) { top: 0; }
+.page-hero > .page-eyebrow { grid-column: 1 / -1; }
+.page-hero h1,
+.manifesto h2,
+.principles h2,
+.contributors h2,
+.contact-band h2 { letter-spacing: normal; }
+.page-eyebrow { margin: 0; font: 10px var(--mono); }
+.page-hero .wp-block-post-title,
+.page-hero .wp-block-heading { margin-block: var(--s4); overflow-wrap: anywhere; }
+.page-hero .page-established { display: block; margin-top: var(--s4); font: 9px var(--mono); }
+.page-intro-copy > p:not(.page-established),
+.manifesto .manifesto-copy > p { margin-block: 1em; }
+.page-panorama.wp-block-image { max-width: none; margin: 0; }
+.page-panorama.wp-block-image img { width: 100%; height: calc(100% - 2rem); object-fit: cover; }
+.page-panorama.wp-block-image figcaption { margin: 0; }
+.principles header > .wp-block-heading,
+.contributors header > .wp-block-heading,
+.contact-band .wp-block-heading { margin-block: var(--s4); }
+.principles-list li > strong { font: 400 clamp(2rem,4vw,4rem)/1 var(--display); }
+.principles-list li > .principle-description { font: 14px/1.55 var(--sans); }
+.contributor-image.wp-block-image { margin: 0; }
+.contributor-image.wp-block-image img { width: 100%; height: 100%; object-fit: cover; }
+.contributor-copy > p { margin-block: 1em; }
+.contributor-copy > .contributor-link { margin: 0; font: inherit; }
+.contact-band .contact-link { margin: 0; }
+.principles header > .page-eyebrow,
+.contributors header > .page-eyebrow,
+.contact-band .page-eyebrow { line-height: 21.7px; }
+.page-featured.wp-block-post-featured-image { margin: 0; width: calc(100% - var(--gutter)); }
+.page-featured.wp-block-post-featured-image img { width: 100%; height: 80vh; object-fit: cover; }
+.page-content { padding-block: var(--s4) var(--s5); }
+.page-content :where(p, li) a { text-decoration: underline; text-underline-offset: .15em; }
+
+@media (max-width: 768px) {
+  .page-hero > .page-eyebrow,
+  .manifesto > .page-eyebrow { line-height: 21.7px; }
+  .manifesto .wp-block-heading { margin-block: 3rem; }
+  .principles .principles-list { margin-top: 4rem; }
+  .principles-list li > .principle-description { grid-column: 2; }
+  .contributor-image.wp-block-image { margin-block: 4rem; }
+  .page-featured.wp-block-post-featured-image img { height: 65vh; }
+}
