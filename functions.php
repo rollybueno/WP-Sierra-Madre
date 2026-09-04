@@ -22,6 +22,10 @@ add_action( 'init', function () {
 	$patterns = array(
 		'home-hero' => __( 'Homepage hero', 'sierra-madre' ),
 		'home-body' => __( 'Homepage editorial sections', 'sierra-madre' ),
+		'story-article-section' => __( 'Story article section with field note', 'sierra-madre' ),
+		'story-article-continuation' => __( 'Story article continuation with field note', 'sierra-madre' ),
+		'story-full-image' => __( 'Story full-width image', 'sierra-madre' ),
+		'story-diptych' => __( 'Story image diptych', 'sierra-madre' ),
 	);
 
 	foreach ( $patterns as $slug => $title ) {
@@ -45,6 +49,35 @@ add_filter( 'query_loop_block_query_vars', function ( $query, $block ) {
 		$query['ignore_sticky_posts'] = true;
 	}
 	return $query;
+}, 10, 2 );
+
+/* Preserve a dynamic post title while applying the prototype's editorial line treatment. */
+add_filter( 'render_block_core/post-title', function ( $content, $block ) {
+	$class_name = $block['attrs']['className'] ?? '';
+	if ( ! str_contains( $class_name, 'story-title' ) || ! is_singular( 'post' ) ) {
+		return $content;
+	}
+
+	$words = preg_split( '/\s+/', trim( get_the_title() ) );
+	if ( count( $words ) < 3 ) {
+		return $content;
+	}
+
+	$accent = array_pop( $words );
+	$second_line = array_pop( $words );
+	$title = esc_html( implode( ' ', $words ) ) . '<br>' . esc_html( $second_line ) . ' <em>' . esc_html( $accent ) . '</em>';
+
+	return preg_replace( '/(<h1\b[^>]*>).*?(<\/h1>)/s', '$1' . $title . '$2', $content, 1 );
+}, 10, 2 );
+
+add_filter( 'render_block_core/post-date', function ( $content, $block ) {
+	$class_name = $block['attrs']['className'] ?? '';
+	if ( ! str_contains( $class_name, 'story-date' ) || ! is_singular( 'post' ) ) {
+		return $content;
+	}
+
+	$minutes = max( 1, (int) ceil( str_word_count( wp_strip_all_tags( get_the_content() ) ) / 220 ) );
+	return preg_replace( '/(<\/time>)/', '$1<span aria-label="Estimated reading time"> / ' . $minutes . ' MIN</span>', $content, 1 );
 }, 10, 2 );
 
 add_action( 'wp_enqueue_scripts', function () {
