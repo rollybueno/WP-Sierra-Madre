@@ -38,6 +38,15 @@ add_action( 'init', function () {
 	}
 }, 20 );
 
+add_filter( 'query_loop_block_query_vars', function ( $query, $block ) {
+	$query_id = (int) ( $block->context['queryId'] ?? 0 );
+	if ( 21 === $query_id ) {
+		$query['category_name'] = 'field-notes';
+		$query['ignore_sticky_posts'] = true;
+	}
+	return $query;
+}, 10, 2 );
+
 add_action( 'wp_enqueue_scripts', function () {
 	$theme = wp_get_theme();
 	wp_enqueue_style(

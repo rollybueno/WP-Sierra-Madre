@@ -26,20 +26,12 @@ $assets = esc_url( get_theme_file_uri( 'assets' ) );
       </div>
     </article>
 
-    <section class="field-notes" id="notes" aria-labelledby="notes-title">
-      <div class="wrap">
-        <header class="notes-header"><span>RECENT ENTRIES / WET SEASON</span><h2 id="notes-title">Field <em>notes</em></h2></header>
-        <div class="notes-layout">
-          <div class="notes-images" aria-hidden="true"><img src="<?php echo $assets; ?>/images/fieldnote-01.jpg" width="474" height="355" alt=""><img src="<?php echo $assets; ?>/images/fieldnote-02.jpg" width="474" height="248" alt=""></div>
-          <ol class="note-list">
-            <li><a href="#"><span>021</span><strong>Before the rain</strong><small>Luzon / 6 min</small><b>↗</b></a></li>
-            <li><a href="#"><span>020</span><strong>The road to the coast</strong><small>Aurora / 8 min</small><b>↗</b></a></li>
-            <li><a href="#"><span>019</span><strong>Morning above clouds</strong><small>Benguet / 5 min</small><b>↗</b></a></li>
-            <li><a href="#"><span>018</span><strong>Somewhere after Baler</strong><small>Aurora / 7 min</small><b>↗</b></a></li>
-          </ol>
-        </div>
-      </div>
-    </section>
+<!-- /wp:html -->
+<!-- wp:group {"tagName":"section","anchor":"notes","className":"field-notes","layout":{"type":"default"}} -->
+<section class="wp-block-group field-notes" id="notes"><div class="wrap"><!-- wp:html --><header class="notes-header"><span>RECENT ENTRIES / WET SEASON</span><h2 id="notes-title">Field <em>notes</em></h2></header><div class="notes-layout"><div class="notes-images" aria-hidden="true"><img src="<?php echo $assets; ?>/images/fieldnote-01.jpg" width="474" height="355" alt=""><img src="<?php echo $assets; ?>/images/fieldnote-02.jpg" width="474" height="248" alt=""></div><!-- /wp:html --><!-- wp:query {"queryId":21,"namespace":"sierra-madre/field-notes","query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+<div class="wp-block-query"><!-- wp:post-template {"className":"note-list"} --><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} --><div class="wp-block-group"><!-- wp:post-title {"level":3,"isLink":true} /--><!-- wp:post-date /--><!-- wp:post-terms {"term":"category"} /--><!-- wp:paragraph --><p>↗</p><!-- /wp:paragraph --></div><!-- /wp:group --><!-- /wp:post-template --></div><!-- /wp:query --><!-- wp:html --></div><!-- /wp:html --></div></section>
+<!-- /wp:group -->
+<!-- wp:html -->
 
     <section class="place-feature" id="places" aria-labelledby="place-title">
       <div class="place-image reveal"><img src="<?php echo $assets; ?>/images/place-01.jpg" width="474" height="266" alt="A coastal village beneath clouded mountains"></div>
