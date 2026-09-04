@@ -20,7 +20,8 @@ body { padding: 0 !important; }
 /* WordPress pins the admin toolbar above absolutely/fixed positioned theme UI. */
 body.admin-bar .site-header { top: 32px; }
 body.admin-bar .overlay { top: 32px; }
-.single .site-header { color: #fff; }
+.single .site-header:not(.is-scrolled) { color: #fff; }
+.single { background: var(--wp--preset--color--paper); }
 
 @media (max-width: 782px) {
   body.admin-bar .site-header { top: 46px; }
@@ -62,6 +63,9 @@ body.admin-bar .overlay { top: 32px; }
 .footer-grid .wp-block-navigation__container { gap: 0; align-items: flex-start; flex-direction: column; }
 .footer-grid .wp-block-navigation-item { align-items: flex-start; }
 .footer-grid .wp-block-navigation-item__content { padding: 0; }
+.footer-grid > .wp-block-group > p > span { display: block; }
+.footer-grid .wp-block-navigation { text-transform: none; letter-spacing: normal; }
+.footer-grid .wp-block-navigation-item__label { font: inherit; letter-spacing: inherit; text-transform: none; opacity: 1; margin: 0; }
 .footer-bottom p { margin: 0; }
 .field-notes .note-list { list-style: none; margin: 0; padding: 0; }
 .field-notes .note-list > li { border-top: 1px solid rgba(255,255,255,.3); }
@@ -73,7 +77,8 @@ body.admin-bar .overlay { top: 32px; }
 
 /* Dynamic core-block adapters for the single-story composition. */
 .story-hero .wp-block-cover__inner-container { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
-.story-hero .wp-block-post-title { position: absolute; left: 10vw; bottom: 18vh; margin: 0; font: 400 clamp(6rem,14vw,14rem)/.68 var(--display); letter-spacing: -.04em; max-width: none; }
+.story-hero .wp-block-post-title { position: absolute; left: 10vw; right: var(--gutter); bottom: 18vh; margin: 0; font: 400 clamp(6rem,14vw,14rem)/.68 var(--display); letter-spacing: -.04em; max-width: none; overflow-wrap: anywhere; }
+.story-hero .wp-block-post-title.story-title-long { font-size: clamp(3rem,8vw,8rem); line-height: .9; }
 .story-hero .story-category { margin: 0; }
 .story-hero .story-byline { margin: 0; }
 .story-hero .story-byline > * { margin: 0; }
@@ -87,23 +92,44 @@ body.admin-bar .overlay { top: 32px; }
 .story-taxonomy > * { margin: 0 0 .75rem; }
 .story-content > :where(p, h2, h3, h4, h5, h6, blockquote, ul, ol) { width: min(calc(100% - var(--gutter) * 2), 660px); margin-inline: auto; }
 .story-content > :where(h2, h3, h4, h5, h6) { font: 400 clamp(3rem,6vw,6rem)/.85 var(--display); letter-spacing: -.04em; margin-block: var(--s5) var(--s3); }
+.story-content > :where(p, ul, ol) { margin-block: 1em; }
+.story-content > h3 { font-size: clamp(2rem,4vw,4rem); line-height: 1; }
+.story-content > h4 { font-size: clamp(1.75rem,3vw,3rem); line-height: 1.1; }
+.story-content > :where(h5, h6) { font-size: clamp(1.5rem,2vw,2rem); line-height: 1.2; }
 .story-content > blockquote { padding-left: var(--s3); border-left: 2px solid var(--signal); font: 400 clamp(2.5rem,5vw,5rem)/1 var(--display); }
+.story-content > blockquote > p,
+.article-body .prose > blockquote > p { font: inherit; }
 .story-content > :where(ul, ol) { padding-left: 1.35em; }
 .article-body > aside { grid-column: 1; }
 .article-body > .prose { grid-column: 2; }
 .article-body > aside > :first-child { font: 9px var(--mono); text-transform: uppercase; }
 .article-body > aside > * { margin: 0 0 1rem; }
-.article-body > .prose > :first-child { margin-top: 0; }
-.article-body > .prose > :last-child { margin-bottom: 0; }
+.article-body > .prose > p { margin-block: 1em; }
+.article-body > .prose > h2 { margin-block: var(--s5) var(--s3); }
 .story-full.wp-block-image { max-width: none; }
-.story-diptych.wp-block-gallery { max-width: none; }
-.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image { width: auto; }
+.story-full.wp-block-image img { width: 100%; height: calc(100% - 2rem); object-fit: cover; }
+.story-full.wp-block-image figcaption { margin: 0; }
+.story-diptych.wp-block-gallery.has-nested-images { display: grid; max-width: none; }
+.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) { display: block; width: auto; margin: 0; align-self: end; }
+.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image):first-child { margin-bottom: var(--s5); }
+.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) img { flex: none; width: 100%; height: calc(100% - 2rem); object-fit: cover; }
+.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image::before { content: none; }
+.story-diptych.wp-block-gallery.has-nested-images figure.wp-block-image figcaption { position: static; background: none; color: inherit; font: 9px var(--mono); padding: .6rem 0 0; margin: 0; text-align: left; text-shadow: none; overflow: visible; }
 .story-footer > .wp-block-group { display: flex; flex-direction: column; align-items: flex-start; }
+.story-footer > .wp-block-group > p { margin: 0; font: 9px var(--mono); text-transform: uppercase; }
+.story-footer .wp-block-post-terms,
+.story-footer .wp-block-post-navigation-link { font: 400 clamp(2rem,4vw,4rem)/1 var(--display); margin-top: 1rem; }
+.story-footer .wp-block-post-navigation-link { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; width: 100%; }
+.story-footer .wp-block-post-navigation-link span { font: inherit; text-transform: none; }
+.story-footer > .wp-block-group:last-child:not(:has(.wp-block-post-navigation-link a)) { display: none; }
 .story-footer > .wp-block-group:last-child a { display: flex; justify-content: space-between; width: 100%; }
 
 @media (max-width: 768px) {
   .story-hero .wp-block-post-title { left: var(--gutter); font-size: 21vw; }
-  .story-content > :where(h2, h3, h4, h5, h6) { font-size: clamp(3rem,14vw,5rem); }
+  .story-byline > .wp-block-post-terms { display: none; }
+  .story-intro .story-taxonomy { margin-top: 3rem; }
+  .story-content > h2 { font-size: clamp(3rem,14vw,5rem); }
+  .footer-top.is-layout-flex { flex-direction: column; align-items: flex-start; }
   .article-body > aside,
   .article-body > .prose { grid-column: auto; }
 }

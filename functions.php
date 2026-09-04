@@ -7,7 +7,7 @@
 
 add_action( 'after_setup_theme', function () {
 	add_theme_support( 'editor-styles' );
-	add_editor_style( array( 'style.css', 'assets/css/theme.css' ) );
+	add_editor_style( array( 'assets/css/theme.css', 'style.css' ) );
 } );
 
 add_action( 'init', function () {
@@ -52,23 +52,34 @@ add_filter( 'query_loop_block_query_vars', function ( $query, $block ) {
 }, 10, 2 );
 
 /* Preserve a dynamic post title while applying the prototype's editorial line treatment. */
-add_filter( 'render_block_core/post-title', function ( $content, $block ) {
+add_filter( 'render_block_core/post-title', function ( $content, $block, $instance ) {
 	$class_name = $block['attrs']['className'] ?? '';
-	if ( ! str_contains( $class_name, 'story-title' ) || ! is_singular( 'post' ) ) {
+	if ( ! in_array( 'story-title', preg_split( '/\s+/', $class_name ), true ) || ! is_singular( 'post' ) ) {
 		return $content;
 	}
 
-	$words = preg_split( '/\s+/', trim( get_the_title() ) );
+	$plain_title = trim( wp_strip_all_tags( get_the_title( $instance->context['postId'] ?? get_the_ID() ) ) );
+	$words = preg_split( '/\s+/u', $plain_title );
+	$is_long = mb_strlen( $plain_title ) > 40;
+	if ( $is_long ) {
+		$processor = new WP_HTML_Tag_Processor( $content );
+		if ( $processor->next_tag( 'H1' ) ) {
+			$processor->add_class( 'story-title-long' );
+			$content = $processor->get_updated_html();
+		}
+	}
 	if ( count( $words ) < 3 ) {
 		return $content;
 	}
 
 	$accent = array_pop( $words );
 	$second_line = array_pop( $words );
-	$title = esc_html( implode( ' ', $words ) ) . '<br>' . esc_html( $second_line ) . ' <em>' . esc_html( $accent ) . '</em>';
+	$title = esc_html( implode( ' ', $words ) ) . ( $is_long ? ' ' : '<br>' ) . esc_html( $second_line ) . ' <em>' . esc_html( $accent ) . '</em>';
 
-	return preg_replace( '/(<h1\b[^>]*>).*?(<\/h1>)/s', '$1' . $title . '$2', $content, 1 );
-}, 10, 2 );
+	return preg_replace_callback( '/(<h1\b[^>]*>).*?(<\/h1>)/s', static function ( $matches ) use ( $title ) {
+		return $matches[1] . $title . $matches[2];
+	}, $content, 1 );
+}, 10, 3 );
 
 add_filter( 'render_block_core/post-date', function ( $content, $block ) {
 	$class_name = $block['attrs']['className'] ?? '';

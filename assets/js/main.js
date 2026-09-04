@@ -37,7 +37,12 @@
     panel.setAttribute('aria-hidden', 'false');
     body.classList.add('overlay-open');
     trigger.setAttribute('aria-expanded', 'true');
-    requestAnimationFrame(() => (panel.querySelector('input') || focusable(panel)[0])?.focus());
+    // Let the visibility transition start before attempting to focus its contents.
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (panel.getAttribute('aria-hidden') === 'false') {
+        (panel.querySelector('input') || focusable(panel)[0])?.focus();
+      }
+    }));
   }
 
   menuButton.addEventListener('click', event => openPanel(menu, event.currentTarget));
