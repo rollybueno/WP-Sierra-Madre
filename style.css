@@ -1,0 +1,66 @@
+/*
+Theme Name: Sierra Madre
+Description: Native Full Site Editing baseline for the Sierra Madre field journal.
+Requires at least: 7.1
+Requires PHP: 8.0
+Version: 0.1.0
+Text Domain: sierra-madre
+*/
+
+/* Gutenberg adds a root wrapper that the static prototype does not have. */
+.wp-site-blocks { padding: 0; }
+.wp-site-blocks > * { margin-block-start: 0; }
+.wp-site-blocks main { margin-block-start: 0; }
+.baseline-stage { min-height: 100svh; background: var(--wp--preset--color--dark); }
+
+/* WordPress pins the admin toolbar above absolutely/fixed positioned theme UI. */
+body.admin-bar .site-header { top: 32px; }
+body.admin-bar .overlay { top: 32px; }
+
+@media (max-width: 782px) {
+  body.admin-bar .site-header { top: 46px; }
+  body.admin-bar .overlay { top: 46px; }
+}
+
+/* Keep keyboard focus visible on native Navigation controls. */
+.wp-block-navigation a:focus-visible,
+.wp-block-navigation button:focus-visible {
+  outline: 2px solid var(--wp--preset--color--signal);
+  outline-offset: 4px;
+}
+
+/* Block-markup adapters: preserve the prototype geometry around editable blocks. */
+.site-header > .wp-block-site-title { margin: 0; }
+.site-header > .wp-block-html { justify-self: end; }
+.site-header .wp-block-navigation { background: transparent; color: inherit; }
+.desktop-nav .wp-block-navigation__container { gap: 1.5rem; }
+.desktop-nav .wp-block-navigation-item { background: transparent; }
+.desktop-nav .wp-block-navigation-item__content { padding: 0; }
+
+.menu-panel .menu-navigation { display: block; width: 80%; margin-top: var(--s4); }
+.menu-panel .menu-navigation .wp-block-navigation__container { display: grid; grid-template-columns: 1fr 1fr; gap: 0; width: 100%; }
+.menu-panel .menu-navigation .wp-block-navigation-item { display: block; }
+.menu-panel .menu-navigation a { width: 100%; }
+.menu-panel > p { margin: 0; }
+
+.search-panel .wp-block-search { margin-top: 20vh; }
+.search-panel .wp-block-search__label { display: block; width: auto; font: clamp(3rem,8vw,8rem)/1 var(--display); margin-bottom: 2rem; }
+.search-panel .wp-block-search__inside-wrapper { display: flex; border: 0; border-bottom: 1px solid; padding: 0; }
+.search-panel .wp-block-search__input { width: 100%; background: none; color: inherit; border: 0; padding: 1rem 0; font-size: clamp(1.2rem,3vw,2.5rem); outline: 0; }
+.search-panel .wp-block-search__button { border: 0; background: none; color: inherit; margin: 0; padding: 0; }
+
+.footer-top > p { margin: 0; }
+.site-footer p.footer-mark { font: 400 clamp(7rem,18vw,18rem)/.88 var(--display); letter-spacing: -.055em; text-transform: uppercase; }
+.footer-grid > .wp-block-group { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-grid > .wp-block-group > p { margin: 0; }
+.footer-grid .wp-block-navigation { align-items: flex-start; }
+.footer-grid .wp-block-navigation__container { gap: 0; align-items: flex-start; flex-direction: column; }
+.footer-grid .wp-block-navigation-item { align-items: flex-start; }
+.footer-grid .wp-block-navigation-item__content { padding: 0; }
+.footer-bottom p { margin: 0; }
+
+@media (max-width: 768px) {
+  .menu-panel .menu-navigation { width: 100%; margin-top: 2rem; }
+  .menu-panel .menu-navigation .wp-block-navigation__container { grid-template-columns: 1fr; }
+  .search-panel .wp-block-search { margin-top: 14vh; }
+}
