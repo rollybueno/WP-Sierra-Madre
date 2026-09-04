@@ -70,6 +70,7 @@
         { "slug": "caption", "name": "Caption", "size": "11px" },
         { "slug": "body", "name": "Body", "size": "14px" },
         { "slug": "lead", "name": "Lead", "size": "clamp(1rem,1.5vw,1.35rem)" },
+        { "slug": "story", "name": "Story body", "size": "clamp(1.05rem,1.5vw,1.3rem)" },
         { "slug": "section", "name": "Section title", "size": "clamp(3.7rem,6.5vw,7.2rem)" },
         { "slug": "display", "name": "Display", "size": "clamp(5rem,13vw,13rem)" }
       ]
