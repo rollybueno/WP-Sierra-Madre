@@ -78,6 +78,7 @@
     "shadow": { "defaultPresets": false, "presets": [{ "slug": "issue", "name": "Issue offset", "shadow": "1.5rem 1.5rem 0 #c4cbc5" }] }
   },
   "styles": {
+    "css": "*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden}img{display:block;max-width:100%}button,input{font:inherit}",
     "color": { "background": "var:preset|color|background", "text": "var:preset|color|ink" },
     "spacing": { "blockGap": "0", "padding": { "left": "0", "right": "0" } },
     "typography": { "fontFamily": "var:preset|font-family|sans", "fontSize": "var:preset|font-size|body", "fontWeight": "400", "lineHeight": "1.55" },

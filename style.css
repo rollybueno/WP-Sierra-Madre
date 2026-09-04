@@ -11,7 +11,10 @@ Text Domain: sierra-madre
 .wp-site-blocks { padding: 0; }
 .wp-site-blocks > * { margin-block-start: 0; }
 .wp-site-blocks main { margin-block-start: 0; }
-.baseline-stage { min-height: 100svh; background: var(--wp--preset--color--dark); }
+.hero.wp-block-cover.alignfull { width: 100%; max-width: none; margin: 0 !important; }
+.hero .wp-block-cover__inner-container { height: 100%; }
+.hero .hero-meta p,
+.hero .hero-foot p { margin: 0; }
 
 /* WordPress pins the admin toolbar above absolutely/fixed positioned theme UI. */
 body.admin-bar .site-header { top: 32px; }
