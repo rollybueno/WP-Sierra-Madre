@@ -3,7 +3,7 @@ Theme Name: Sierra Madre
 Description: Native Full Site Editing baseline for the Sierra Madre field journal.
 Requires at least: 7.1
 Requires PHP: 8.0
-Version: 0.2.3
+Version: 0.2.4
 Text Domain: sierra-madre
 */
 
@@ -39,6 +39,26 @@ body.admin-bar .overlay { top: 32px; }
 .site-header > .wp-block-site-title { margin: 0; }
 .site-header > .wp-block-html { justify-self: end; }
 .site-header .wp-block-navigation { background: transparent; color: inherit; }
+.site-header .text-button,
+.site-header .menu-button {
+  color: inherit;
+}
+.site-header .menu-button i,
+.site-header .menu-button i::after {
+  background-color: currentColor;
+}
+
+.overlay-top button {
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+}
+.search-panel .overlay-top button,
+.menu-panel .overlay-top button {
+  color: inherit;
+}
 
 .menu-panel .menu-navigation { display: block; width: 80%; margin-top: var(--s4); }
 .menu-panel .menu-navigation .wp-block-navigation__container { display: grid; grid-template-columns: 1fr 1fr; gap: 0; width: 100%; }

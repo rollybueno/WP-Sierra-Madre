@@ -110,6 +110,10 @@ No. Demo content used during theme development is not imported automatically and
 
 == Changelog ==
 
+= 0.2.4 =
+
+* Make header Search/Menu inherit header color on the hero, and keep overlay Close buttons visible on dark panels.
+
 = 0.2.3 =
 
 * Keep the front-page header absolute over the hero when the site uses latest posts (`home blog`).
