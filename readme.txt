@@ -14,7 +14,7 @@ Sierra Madre is a Full Site Editing theme built with native WordPress blocks, bl
 
 == Homepage content and curation ==
 
-The homepage combines automatic feeds with deliberately selected editorial features. Posts remain ordinary WordPress posts so content is retained when the theme is changed.
+The homepage (v2) is composed of seven patterns in `templates/front-page.html`: hero, opening, journal, places, photography, dispatches, and postscript. Tokens and base typography live in theme.json; complex layout stays in `assets/css/theme.css`.
 
 = Required categories =
 
@@ -30,40 +30,32 @@ Create or retain the following categories and slugs:
 * Culture: culture
 * Issues: issues
 
-Do not change these slugs without also updating the corresponding homepage Query blocks. Category names may be translated or changed for display, but their slugs form the default query contract.
+Do not change these slugs without also updating the homepage patterns in `patterns/home-*.php`. Category names may be translated or changed for display, but their slugs form the default query contract.
 
 = Curated homepage sections =
 
-The following prominent sections are curated. An editor deliberately chooses or configures the post displayed in each Query Loop:
+Each section picks the latest published post in its category (with static prototype fallbacks when empty):
 
-* Homepage hero
-* Featured journey
-* Featured place
-* Photo essay
-* People / conversation feature
-* Transit feature
-* Culture / table story
-* Current issue promotion
+* Homepage hero — `homepage-hero`
+* Journal lead — `journeys`
+* Places feature and cards — `places` (up to five)
+* Photo essay — `photography` (attached images preferred for the sequence)
+* Dispatches cards — `people`, `culture`, `movement`
+* Current issue — `issues`
 
-For every curated post, provide a title, excerpt, featured image, category, and published permalink. Where a Query Loop offers category or sticky-post filters, configure the block in Appearance > Editor rather than duplicating the post content in the template.
+For every curated post, provide a title, excerpt, featured image, category, and published permalink.
 
 = Automatic homepage sections =
 
-The Field Notes section displays recent posts from the field-notes category and should update automatically as posts are published.
-
-The Places Index is intended to display Place entries and use their featured images as interactive previews. Each Place entry needs a title, featured image, and any displayed geographic information.
-
-= Related metadata =
-
-The Field Log belongs to the currently featured journey. Until a companion plugin supplies structured geographic metadata, its values remain editable pattern content. The theme must not register permanent business-critical metadata or content types.
+Recent notes inside the journal band display the two latest `field-notes` posts.
 
 = Static sections =
 
-Opening Notes and the Newsletter presentation are normal editable pattern content. Newsletter delivery and subscriber storage require a plugin or external service selected by the site owner.
+The opening band and field-letters form are pattern content. Newsletter delivery requires a plugin or external service selected by the site owner.
 
 = Missing-content behavior =
 
-Homepage queries should fail gracefully when no matching post exists. Installing or activating the theme must not create categories, posts, attachments, or other starter content automatically.
+Homepage picks fail gracefully when no matching post exists. Installing or activating the theme must not create categories, posts, attachments, or other starter content automatically.
 
 == Installation ==
 
@@ -90,13 +82,19 @@ These are unsynced patterns: editing one page does not change another page. Acti
 
 = Does the theme register custom post types? =
 
-No. Persistent content models belong in a plugin. The default homepage uses standard posts, categories, featured images, excerpts, and Query Loops.
+No. Persistent content models belong in a plugin. The default homepage uses standard posts, categories, featured images, and excerpts.
 
 = Does activating the theme install demo content? =
 
 No. Demo content used during theme development is not imported automatically and is not required for activation.
 
 == Changelog ==
+
+= 0.2.0 =
+
+* Rebuilt the front page around the v2 editorial prototype.
+* Split homepage into section patterns; theme.json-first tokens with theme.css layout fallbacks.
+* Removed the v1 home-body mega-pattern and field-notes Query Loop filter.
 
 = 0.1.0 =
 

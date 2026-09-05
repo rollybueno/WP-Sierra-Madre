@@ -76,16 +76,22 @@
   updateHeader();
   addEventListener('scroll', updateHeader, { passive: true });
 
-  const preview = document.querySelector('[data-place-image]');
-  document.querySelectorAll('[data-image]').forEach(link => {
-    const swap = () => {
-      if (!preview) return;
-      const source = link.dataset.image;
-      preview.classList.add('is-changing');
-      setTimeout(() => { preview.src = source; preview.classList.remove('is-changing'); }, 140);
-    };
-    link.addEventListener('mouseenter', swap);
-    link.addEventListener('focus', swap);
+  const lettersForm = document.querySelector('[data-letters-form]');
+  const lettersStatus = document.querySelector('[data-letters-status]');
+  lettersForm?.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!lettersStatus) return;
+    const email = new FormData(lettersForm).get('email')?.toString().trim() || '';
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    lettersStatus.hidden = false;
+    if (!valid) {
+      lettersStatus.dataset.state = 'error';
+      lettersStatus.textContent = 'That email does not look right. Check the address and try again.';
+      return;
+    }
+    lettersStatus.dataset.state = 'success';
+    lettersStatus.textContent = 'You are on the list. Field letters arrive when there is something worth sending.';
+    lettersForm.reset();
   });
 
   if ('IntersectionObserver' in window) {
