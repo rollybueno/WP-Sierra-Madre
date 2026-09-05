@@ -9,11 +9,11 @@ $assets = esc_url( get_theme_file_uri( 'assets' ) );
 $journey = sierra_madre_pick_post(
 	'journeys',
 	array(
-		'title'   => 'The long road north',
-		'excerpt' => 'Three days through rain, mountain roads and towns that disappear into cloud before noon.',
+		'title'   => __( 'The long road north', 'sierra-madre' ),
+		'excerpt' => __( 'Three days through rain, mountain roads and towns that disappear into cloud before noon.', 'sierra-madre' ),
 		'url'     => '#',
 		'image'   => "$assets/images/journey-01.jpg",
-		'meta'    => 'Journey / Cordillera',
+		'meta'    => __( 'Journey / Cordillera', 'sierra-madre' ),
 		'minutes' => 12,
 	)
 );
@@ -27,19 +27,19 @@ $notes = get_posts(
 $archive = get_post_type_archive_link( 'post' ) ?: home_url( '/' );
 $fallbacks = array(
 	array(
-		'title'   => 'Before the rain',
-		'excerpt' => 'The hour when everything holds still.',
+		'title'   => __( 'Before the rain', 'sierra-madre' ),
+		'excerpt' => __( 'The hour when everything holds still.', 'sierra-madre' ),
 		'url'     => '#',
 		'image'   => "$assets/images/fieldnote-01.jpg",
-		'label'   => '021 / Luzon',
+		'label'   => __( '021 / Luzon', 'sierra-madre' ),
 		'minutes' => 6,
 	),
 	array(
-		'title'   => 'The road to the coast',
-		'excerpt' => 'Following the river until it finds the sea.',
+		'title'   => __( 'The road to the coast', 'sierra-madre' ),
+		'excerpt' => __( 'Following the river until it finds the sea.', 'sierra-madre' ),
 		'url'     => '#',
 		'image'   => "$assets/images/coast-01.jpg",
-		'label'   => '020 / Aurora',
+		'label'   => __( '020 / Aurora', 'sierra-madre' ),
 		'minutes' => 8,
 	),
 );
@@ -48,23 +48,23 @@ $fallbacks = array(
 <section class="wp-block-group alignfull v2-journal" id="journeys"><!-- wp:html -->
 <div class="v2-wrap">
   <header class="v2-section-head">
-    <div><p class="v2-label">The latest</p><h2 id="journal-title">From the field</h2></div>
-    <a class="v2-text-link" href="<?php echo esc_url( $archive ); ?>">All stories <span aria-hidden="true">↗</span></a>
+    <div><p class="v2-label"><?php esc_html_e( 'The latest', 'sierra-madre' ); ?></p><h2 id="journal-title"><?php esc_html_e( 'From the field', 'sierra-madre' ); ?></h2></div>
+    <a class="v2-text-link" href="<?php echo esc_url( $archive ); ?>"><?php esc_html_e( 'All stories', 'sierra-madre' ); ?> <span aria-hidden="true">↗</span></a>
   </header>
   <div class="v2-journal-grid">
     <article class="v2-lead">
       <a class="v2-image-link" href="<?php echo esc_url( $journey['url'] ); ?>">
         <img src="<?php echo esc_url( $journey['image'] ); ?>" width="960" height="640" alt="" loading="lazy">
-        <span class="v2-image-tag">Editor's pick</span>
+        <span class="v2-image-tag"><?php esc_html_e( "Editor's pick", 'sierra-madre' ); ?></span>
       </a>
-      <div class="v2-story-meta"><span><?php echo esc_html( $journey['meta'] ?: 'Journey' ); ?></span><span><?php echo esc_html( (string) ( $journey['minutes'] ?? 12 ) ); ?> min read</span></div>
+      <div class="v2-story-meta"><span><?php echo esc_html( $journey['meta'] ?: __( 'Journey', 'sierra-madre' ) ); ?></span><span><?php echo esc_html( sprintf( /* translators: %s: minutes */ __( '%s min read', 'sierra-madre' ), (string) ( $journey['minutes'] ?? 12 ) ) ); ?></span></div>
       <h3><a href="<?php echo esc_url( $journey['url'] ); ?>"><?php echo sierra_madre_accent_title( $journey['title'] ); ?></a></h3>
       <p><?php echo esc_html( $journey['excerpt'] ); ?></p>
-      <div class="v2-route"><span><b>46</b> km on the road</span><span><b>1,480</b> m above sea level</span><span><b>03</b> days in the rain</span></div>
-      <a class="v2-text-link v2-lead-cta" href="<?php echo esc_url( $journey['url'] ); ?>">Read the journey <span aria-hidden="true">↗</span></a>
+      <div class="v2-route"><span><b>46</b> <?php esc_html_e( 'km on the road', 'sierra-madre' ); ?></span><span><b>1,480</b> <?php esc_html_e( 'm above sea level', 'sierra-madre' ); ?></span><span><b>03</b> <?php esc_html_e( 'days in the rain', 'sierra-madre' ); ?></span></div>
+      <a class="v2-text-link v2-lead-cta" href="<?php echo esc_url( $journey['url'] ); ?>"><?php esc_html_e( 'Read the journey', 'sierra-madre' ); ?> <span aria-hidden="true">↗</span></a>
     </article>
     <aside class="v2-notes" id="notes" aria-labelledby="notes-title">
-      <header><h3 id="notes-title">Recent notes</h3><span class="v2-label">Wet season / 2026</span></header>
+      <header><h3 id="notes-title"><?php esc_html_e( 'Recent notes', 'sierra-madre' ); ?></h3><span class="v2-label"><?php esc_html_e( 'Wet season / 2026', 'sierra-madre' ); ?></span></header>
       <ol>
         <?php
         for ( $i = 0; $i < 2; $i++ ) :
@@ -89,7 +89,7 @@ $fallbacks = array(
               <span class="v2-label"><?php echo esc_html( $item['label'] ); ?></span>
               <h4><?php echo esc_html( $item['title'] ); ?></h4>
               <p><?php echo esc_html( $item['excerpt'] ); ?></p>
-              <span class="v2-note-time"><?php echo esc_html( (string) $item['minutes'] ); ?> min read</span>
+              <span class="v2-note-time"><?php echo esc_html( sprintf( /* translators: %s: minutes */ __( '%s min read', 'sierra-madre' ), (string) $item['minutes'] ) ); ?></span>
             </div>
           </a>
         </li>

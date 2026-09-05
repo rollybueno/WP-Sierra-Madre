@@ -1,10 +1,19 @@
 /*
 Theme Name: Sierra Madre
-Description: Native Full Site Editing baseline for the Sierra Madre field journal.
+Author: rollybueno
+Author URI: https://profiles.wordpress.org/rollybueno/
+Description: An editorial Full Site Editing theme for field journals, long-form stories, photography, people, and places.
 Requires at least: 7.1
+Tested up to: 7.1
 Requires PHP: 8.0
-Version: 0.2.4
+Version: 0.2.5
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sierra-madre
+Tags: full-site-editing, block-patterns, blog, custom-colors, custom-logo, custom-menu, editor-style, featured-images, one-column, rtl-language-support, sticky-post, style-variations, threaded-comments, translation-ready, wide-blocks
+
+Sierra Madre WordPress Theme, (C) 2026 rollybueno
+Sierra Madre is distributed under the terms of the GNU GPL.
 */
 
 /* Gutenberg adds a root wrapper that the static prototype does not have. */

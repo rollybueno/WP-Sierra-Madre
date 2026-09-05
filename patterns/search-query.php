@@ -16,9 +16,9 @@
 <!-- wp:query-no-results -->
 <!-- wp:group {"className":"wrap result-empty","layout":{"type":"default"}} -->
 <div class="wp-block-group wrap result-empty"><!-- wp:paragraph -->
-<p>Nothing matched that trail. Try another word, or return to the journal.</p>
+<p><?php esc_html_e( 'Nothing matched that trail. Try another word, or return to the journal.', 'sierra-madre' ); ?></p>
 <!-- /wp:paragraph --><!-- wp:paragraph -->
-<p><a href="/">Return to the journal ↗</a></p>
+<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Return to the journal ↗', 'sierra-madre' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- /wp:query-no-results --></div>

@@ -1,63 +1,83 @@
 hero-01.jpg
 Photo by Tim Trad
 Source: https://stocksnap.io/photo/landscape-road-Y9ZQXOMYED
+License: CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
 
 intro-portrait.jpg
 Photo by Semina Psichogiopoulou
 Source: https://stocksnap.io/photo/woman-portrait-JDUWJJCPRQ
+License: CC0 1.0 Universal
 
 journey-01.jpg
 Photo by Travel Adventures
 Source: https://stocksnap.io/photo/mountain-road-3SPI2BD7HI
+License: CC0 1.0 Universal
 
 fieldnote-01.jpg
 Photo by Laura Lefurgey-Smith
 Source: https://stocksnap.io/photo/trees-forest-MZWDI8XAH6
+License: CC0 1.0 Universal
 
 fieldnote-02.jpg
 Photo by Matt Moloney
 Source: https://stocksnap.io/photo/nature-forest-ED085NVC3Z
+License: CC0 1.0 Universal
 
 place-01.jpg
 Photo by Sergei Gussev
 Source: https://stocksnap.io/photo/coastal-village-GGEMPAZ3EA
+License: CC0 1.0 Universal
 
 photoessay-01.jpg
 Photo by Todd Diemer
 Source: https://stocksnap.io/photo/mountain-travel-FU4J7VV600
+License: CC0 1.0 Universal
 
 photoessay-02.jpg
 Photo by Jon Flobrant
 Source: https://stocksnap.io/photo/highland-mountain-PRXT5O5UF0
+License: CC0 1.0 Universal
 
 photoessay-03.jpg
 Photo by Tim Bogdanov
 Source: https://stocksnap.io/photo/forest-nature-Z3LAN8STEX
+License: CC0 1.0 Universal
 
 portrait-01.jpg
 Photo by World Travel Adventures
 Source: https://stocksnap.io/photo/woman-looking-5SXDVXEVRY
+License: CC0 1.0 Universal
 
 transit-01.jpg
 Photo by Dan Gold
 Source: https://stocksnap.io/photo/street-mountain-TYSQMGU2Q2
+License: CC0 1.0 Universal
 
 food-01.jpg
 Photo by Daria Shevtsova
 Source: https://www.stocksnap.io/photo/fruit-market-E4J3BP6ZNJ
+License: CC0 1.0 Universal
 
 architecture-01.jpg
 Photo by Oskar Krawczyk
 Source: https://stocksnap.io/photo/architecture-buildings-HFL8JSMZQN
+License: CC0 1.0 Universal
 
 coast-01.jpg
 Photo by Mahkeo
 Source: https://stocksnap.io/photo/nature-landscape-L85ALA2PT8
+License: CC0 1.0 Universal
 
 issue-01.jpg
 Photo by Corey Agopian
 Source: https://stocksnap.io/photo/mountain-forest-QU0MQMHUBT
+License: CC0 1.0 Universal
 
 detail-01.jpg
 Photo by Lukasz Szmigiel
 Source: https://stocksnap.io/photo/trees-forest-ZJOY89B3SM
+License: CC0 1.0 Universal
+
+screenshot.png (theme root)
+Derived from hero-01.jpg for the WordPress.org theme directory screenshot.
+License: CC0 1.0 Universal (source photograph)

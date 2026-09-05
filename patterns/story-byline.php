@@ -16,11 +16,11 @@ $minutes   = max( 1, (int) ceil( str_word_count( wp_strip_all_tags( (string) get
 <!-- wp:html -->
 <div class="story-byline-fields">
   <?php if ( $author ) : ?>
-    <span>WORDS / <?php echo esc_html( $author ); ?></span>
+    <span><?php echo esc_html( sprintf( /* translators: %s: author name */ __( 'WORDS / %s', 'sierra-madre' ), $author ) ); ?></span>
   <?php endif; ?>
   <?php if ( $photo ) : ?>
-    <span>PHOTOGRAPHS / <?php echo esc_html( $photo ); ?></span>
+    <span><?php echo esc_html( sprintf( /* translators: %s: photographer or photo credit */ __( 'PHOTOGRAPHS / %s', 'sierra-madre' ), $photo ) ); ?></span>
   <?php endif; ?>
-  <span><?php echo esc_html( $date ); ?> / <?php echo (int) $minutes; ?> MIN</span>
+  <span><?php echo esc_html( sprintf( /* translators: 1: date, 2: minutes */ __( '%1$s / %2$d MIN', 'sierra-madre' ), $date, $minutes ) ); ?></span>
 </div>
 <!-- /wp:html -->

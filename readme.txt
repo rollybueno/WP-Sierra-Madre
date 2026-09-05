@@ -110,6 +110,10 @@ No. Demo content used during theme development is not imported automatically and
 
 == Changelog ==
 
+= 0.2.5 =
+
+* WordPress.org readiness: complete style.css headers, screenshot, licensing Resources, site-owned footer copyright, PHP i18n, focus-visible chrome styles, and .distignore packaging excludes.
+
 = 0.2.4 =
 
 * Make header Search/Menu inherit header color on the hero, and keep overlay Close buttons visible on dark panels.
@@ -139,6 +143,49 @@ No. Demo content used during theme development is not imported automatically and
 
 * Added the initial block-theme foundation, global header and footer, homepage patterns, and editorial curation documentation.
 
+== Copyright ==
+
+Sierra Madre WordPress Theme, Copyright 2026 rollybueno
+Sierra Madre is distributed under the terms of the GNU GPL v2 or later.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
 == Resources ==
 
-Bundled asset licensing and sources are documented in assets/images/CREDITS.txt and assets/fonts/LICENSE.txt. These records will be consolidated before a WordPress.org release.
+= Fonts =
+
+Instrument Serif
+Copyright 2022 The Instrument Serif Project Authors (https://github.com/Instrument/instrument-serif)
+License: SIL Open Font License 1.1
+Source: https://github.com/google/fonts/tree/main/ofl/instrumentserif
+License URI: https://openfontlicense.org/open-font-license-official-text/
+
+Manrope
+Copyright 2018 The Manrope Project Authors (https://github.com/sharanda/manrope)
+License: SIL Open Font License 1.1
+Source: https://github.com/google/fonts/tree/main/ofl/manrope
+License URI: https://openfontlicense.org/open-font-license-official-text/
+
+IBM Plex Mono
+Copyright 2017 IBM Corp. All rights reserved.
+License: SIL Open Font License 1.1
+Source: https://github.com/google/fonts/tree/main/ofl/ibmplexmono
+License URI: https://openfontlicense.org/open-font-license-official-text/
+
+Full OFL text is bundled in assets/fonts/LICENSE.txt.
+
+= Images =
+
+Bundled photographs are from StockSnap and are licensed CC0 1.0 Universal
+(https://creativecommons.org/publicdomain/zero/1.0/). Per-file photographer
+credits and source URLs are listed in assets/images/CREDITS.txt.
+
+screenshot.png is derived from hero-01.jpg for the WordPress.org theme directory.

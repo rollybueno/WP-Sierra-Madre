@@ -14,9 +14,27 @@ $places = get_posts(
 	)
 );
 $fallbacks = array(
-	array( 'title' => 'Sierra Madre', 'excerpt' => 'A range facing the Pacific. The spine of the eastern islands, and the reason this journal has a name.', 'url' => '#', 'image' => "$assets/images/place-01.jpg", 'coord' => '14.6723° N' ),
-	array( 'title' => 'Aurora', 'excerpt' => 'Where the road meets the sea', 'url' => '#', 'image' => "$assets/images/coast-01.jpg", 'coord' => '15.7600° N' ),
-	array( 'title' => 'Benguet', 'excerpt' => 'Mornings above the clouds', 'url' => '#', 'image' => "$assets/images/fieldnote-01.jpg", 'coord' => '16.4023° N' ),
+	array(
+		'title'   => __( 'Sierra Madre', 'sierra-madre' ),
+		'excerpt' => __( 'A range facing the Pacific. The spine of the eastern islands, and the reason this journal has a name.', 'sierra-madre' ),
+		'url'     => '#',
+		'image'   => "$assets/images/place-01.jpg",
+		'coord'   => '14.6723° N',
+	),
+	array(
+		'title'   => __( 'Aurora', 'sierra-madre' ),
+		'excerpt' => __( 'Where the road meets the sea', 'sierra-madre' ),
+		'url'     => '#',
+		'image'   => "$assets/images/coast-01.jpg",
+		'coord'   => '15.7600° N',
+	),
+	array(
+		'title'   => __( 'Benguet', 'sierra-madre' ),
+		'excerpt' => __( 'Mornings above the clouds', 'sierra-madre' ),
+		'url'     => '#',
+		'image'   => "$assets/images/fieldnote-01.jpg",
+		'coord'   => '16.4023° N',
+	),
 );
 $items = array();
 for ( $i = 0; $i < 3; $i++ ) {
@@ -39,8 +57,8 @@ $archive = ( $cat instanceof WP_Term ) ? get_category_link( $cat ) : home_url( '
 <section class="wp-block-group alignfull v2-places" id="places"><!-- wp:html -->
 <div class="v2-wrap">
   <header class="v2-section-head">
-    <div><p class="v2-label">Places</p><h2 id="places-title">A place to begin.</h2></div>
-    <p>Not a checklist. A few places that stay with you.</p>
+    <div><p class="v2-label"><?php esc_html_e( 'Places', 'sierra-madre' ); ?></p><h2 id="places-title"><?php esc_html_e( 'A place to begin.', 'sierra-madre' ); ?></h2></div>
+    <p><?php esc_html_e( 'Not a checklist. A few places that stay with you.', 'sierra-madre' ); ?></p>
   </header>
   <div class="v2-place-layout">
     <a class="v2-place-feature" href="<?php echo esc_url( $items[0]['url'] ); ?>">
@@ -62,17 +80,17 @@ $archive = ( $cat instanceof WP_Term ) ? get_category_link( $cat ) : home_url( '
     </div>
   </div>
   <nav class="v2-place-index" id="place-index" aria-label="<?php esc_attr_e( 'Explore more places', 'sierra-madre' ); ?>">
-    <span class="v2-label">Keep exploring</span>
+    <span class="v2-label"><?php esc_html_e( 'Keep exploring', 'sierra-madre' ); ?></span>
     <?php if ( $index_links ) : ?>
       <?php foreach ( $index_links as $link ) : ?>
       <a href="<?php echo esc_url( get_permalink( $link ) ); ?>"><?php echo esc_html( get_the_title( $link ) ); ?> <span>↗</span></a>
       <?php endforeach; ?>
     <?php else : ?>
-      <a href="<?php echo esc_url( $archive ); ?>">Ifugao <span>↗</span></a>
-      <a href="<?php echo esc_url( $archive ); ?>">Quezon <span>↗</span></a>
-      <a href="<?php echo esc_url( $archive ); ?>">Cagayan <span>↗</span></a>
+      <a href="<?php echo esc_url( $archive ); ?>"><?php esc_html_e( 'Ifugao', 'sierra-madre' ); ?> <span>↗</span></a>
+      <a href="<?php echo esc_url( $archive ); ?>"><?php esc_html_e( 'Quezon', 'sierra-madre' ); ?> <span>↗</span></a>
+      <a href="<?php echo esc_url( $archive ); ?>"><?php esc_html_e( 'Cagayan', 'sierra-madre' ); ?> <span>↗</span></a>
     <?php endif; ?>
-    <a class="v2-index-all" href="<?php echo esc_url( $archive ); ?>">The place index <span>↗</span></a>
+    <a class="v2-index-all" href="<?php echo esc_url( $archive ); ?>"><?php esc_html_e( 'The place index', 'sierra-madre' ); ?> <span>↗</span></a>
   </nav>
 </div>
 <!-- /wp:html --></section>

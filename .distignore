@@ -1,0 +1,21 @@
+# Files and folders excluded from WordPress.org theme zip builds.
+# Keep development prototypes and tooling out of the distributed package.
+
+.impeccable
+.impeccable/**
+HTML
+HTML/**
+docs
+docs/**
+.git
+.git/**
+.gitignore
+.gitattributes
+.distignore
+node_modules
+node_modules/**
+*.md
+!readme.txt
+agent-transcripts
+.cursor
+.DS_Store

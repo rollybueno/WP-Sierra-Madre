@@ -8,6 +8,7 @@
 require_once get_theme_file_path( 'inc/helpers.php' );
 
 add_action( 'after_setup_theme', function () {
+	load_theme_textdomain( 'sierra-madre', get_template_directory() . '/languages' );
 	add_theme_support( 'editor-styles' );
 	add_editor_style( array( 'assets/css/theme.css', 'style.css' ) );
 } );
@@ -29,6 +30,7 @@ add_action( 'init', function () {
 		'home-photography'             => __( 'Homepage photography', 'sierra-madre' ),
 		'home-dispatches'              => __( 'Homepage dispatches', 'sierra-madre' ),
 		'home-postscript'              => __( 'Homepage postscript', 'sierra-madre' ),
+		'footer-colophon'              => __( 'Footer colophon', 'sierra-madre' ),
 		'story-intro-meta'             => __( 'Story field metadata', 'sierra-madre' ),
 		'story-byline'                 => __( 'Story byline', 'sierra-madre' ),
 		'story-article-section'        => __( 'Story article section with field note', 'sierra-madre' ),
@@ -76,6 +78,14 @@ add_action( 'init', function () {
 add_filter( 'render_block_core/pattern', function ( $block_content, $block ) {
 	$slug = $block['attrs']['slug'] ?? '';
 	$dynamic = array(
+		'sierra-madre/home-hero',
+		'sierra-madre/home-opening',
+		'sierra-madre/home-journal',
+		'sierra-madre/home-places',
+		'sierra-madre/home-photography',
+		'sierra-madre/home-dispatches',
+		'sierra-madre/home-postscript',
+		'sierra-madre/footer-colophon',
 		'sierra-madre/story-intro-meta',
 		'sierra-madre/story-byline',
 		'sierra-madre/archive-hero',
@@ -136,7 +146,18 @@ add_filter( 'render_block_core/post-date', function ( $content, $block ) {
 	}
 
 	$minutes = max( 1, (int) ceil( str_word_count( wp_strip_all_tags( get_the_content() ) ) / 220 ) );
-	return preg_replace( '/(<\/time>)/', '$1<span aria-label="Estimated reading time"> / ' . $minutes . ' MIN</span>', $content, 1 );
+	$label   = sprintf(
+		/* translators: %d: estimated reading time in minutes */
+		__( ' / %d MIN', 'sierra-madre' ),
+		$minutes
+	);
+	$aria = esc_attr__( 'Estimated reading time', 'sierra-madre' );
+	return preg_replace(
+		'/(<\/time>)/',
+		'$1<span aria-label="' . $aria . '">' . esc_html( $label ) . '</span>',
+		$content,
+		1
+	);
 }, 10, 2 );
 
 /* Keep journal search focused on stories, not utility pages. */

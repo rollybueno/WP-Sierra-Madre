@@ -35,6 +35,20 @@
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: none; }
+.skip-link:focus-visible,
+.text-button:focus-visible,
+.menu-button:focus-visible,
+.overlay button:focus-visible,
+.v2-letters input:focus-visible,
+.v2-letters button:focus-visible,
+.search-panel input:focus-visible,
+.search-panel button:focus-visible,
+.site-footer a:focus-visible,
+.v2-text-link:focus-visible,
+.hero-foot a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
 .wrap, .v2-wrap { width: min(calc(100% - var(--gutter) * 2), var(--content)); margin-inline: auto; }
 img { object-fit: cover; }
 body.overlay-open { overflow: hidden; }
