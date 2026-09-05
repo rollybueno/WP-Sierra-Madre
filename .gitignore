@@ -9,3 +9,7 @@ node_modules/
 # Static prototype and internal docs (kept on disk; not versioned)
 HTML/
 docs/
+
+# Build output
+dist/
+*.zip

@@ -66,6 +66,10 @@ Homepage picks fail gracefully when no matching post exists. Installing or activ
 3. Open Appearance > Editor to configure navigation and homepage queries.
 4. Assign posts to the documented categories and add featured images.
 
+= Optional curated demo content =
+
+For local development, `demo-content/sierra-madre-curated.xml` is a WordPress WXR export matching the homepage category contract (hero, journeys, field notes, places, photography, people, culture, movement, issues) plus an About page. Import it via Tools → Import → WordPress after the theme is active. Attachment URLs use `127.0.0.1` (Local’s nginx port) so PHP can download theme images — regenerate with `python3 bin/generate-demo-wxr.py` if your Local port changed. Or run `./bin/import-demo.sh` with WP-CLI. This folder is excluded from the WordPress.org zip.
+
 == Pages and editorial layouts ==
 
 The default Page template displays the page title, optional featured image, and editable page content. Existing pages keep their content and use this template automatically unless another template is assigned.

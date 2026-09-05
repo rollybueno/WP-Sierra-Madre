@@ -7,6 +7,8 @@ HTML
 HTML/**
 docs
 docs/**
+demo-content
+demo-content/**
 .git
 .git/**
 .gitignore
@@ -14,8 +16,13 @@ docs/**
 .distignore
 node_modules
 node_modules/**
+bin
+bin/**
+dist
+dist/**
 *.md
 !readme.txt
 agent-transcripts
 .cursor
 .DS_Store
+*.zip

@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Generated for Sierra Madre curated homepage demo content. -->
+<!-- Import via Tools, Import, WordPress after activating the theme. -->
+<!-- Attachment URLs use 127.0.0.1 so Local PHP can download images. -->
+<!-- Regenerate with: python3 bin/generate-demo-wxr.py -->
+<!-- Media base: http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>Sierra Madre</title>
+	<link>http://wp-theme-sierra-madre.local</link>
+	<description>Curated demo content for the Sierra Madre theme</description>
+	<pubDate>Fri, 28 Aug 2026 10:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://wp-theme-sierra-madre.local</wp:base_site_url>
+	<wp:base_blog_url>http://wp-theme-sierra-madre.local</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[field@sierramadre.example]]></wp:author_email><wp:author_display_name><![CDATA[Field Desk]]></wp:author_display_name><wp:author_first_name><![CDATA[Field]]></wp:author_first_name><wp:author_last_name><![CDATA[Desk]]></wp:author_last_name></wp:author>
+	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>journeys</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Journeys]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>2</wp:term_id><wp:category_nicename>homepage-hero</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Homepage Hero]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename>field-notes</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Field Notes]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>places</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Places]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>5</wp:term_id><wp:category_nicename>photography</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Photography]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>people</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[People]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>7</wp:term_id><wp:category_nicename>movement</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Movement]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>8</wp:term_id><wp:category_nicename>culture</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Culture]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>9</wp:term_id><wp:category_nicename>issues</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[Issues]]></wp:cat_name></wp:category>
+	<wp:tag><wp:term_id>50</wp:term_id><wp:tag_slug>leon-rivera</wp:tag_slug><wp:tag_name><![CDATA[Leon Rivera]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>51</wp:term_id><wp:tag_slug>mara-villanueva</wp:tag_slug><wp:tag_name><![CDATA[Mara Villanueva]]></wp:tag_name></wp:tag>
+	<item>
+		<title>hero 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/hero-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/hero-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>201</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>hero-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/hero-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/hero-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>journey 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/journey-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/journey-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>202</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>journey-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/journey-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/journey-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>fieldnote 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>203</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>fieldnote-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/fieldnote-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>coast 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/coast-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/coast-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>204</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>coast-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/coast-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/coast-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>place 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/place-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/place-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>205</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>place-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/place-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/place-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>fieldnote 02</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-02.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-02.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>206</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>fieldnote-02.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/fieldnote-02.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/fieldnote-02.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>photoessay 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>207</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>photoessay-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>311</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/photoessay-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>photoessay 02</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-02.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-02.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>208</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>photoessay-02.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>311</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-02.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/photoessay-02.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>photoessay 03</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-03.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-03.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>209</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>photoessay-03.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>311</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/photoessay-03.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/photoessay-03.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>portrait 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/portrait-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/portrait-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>210</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>portrait-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/portrait-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/portrait-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>food 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/food-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/food-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>211</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>food-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/food-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/food-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>transit 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/transit-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/transit-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>212</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>transit-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/transit-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/transit-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>issue 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/issue-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/issue-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>213</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>issue-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/issue-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/issue-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>architecture 01</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/architecture-01.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/architecture-01.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>214</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>architecture-01.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/architecture-01.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/architecture-01.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title>intro portrait</title>
+		<link>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/intro-portrait.jpg</link>
+		<pubDate>Mon, 03 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/intro-portrait.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>215</wp:post_id>
+		<wp:post_date>2026-08-03 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-03 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>intro-portrait.jpg</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://127.0.0.1:10058/wp-content/themes/sierra-madre/assets/images/intro-portrait.jpg</wp:attachment_url>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key><wp:meta_value><![CDATA[2026/08/intro-portrait.jpg]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[North of the last road]]></title>
+		<link>http://wp-theme-sierra-madre.local/north-of-the-last-road/</link>
+		<pubDate>Fri, 28 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=301</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">The road leaves the valley without ceremony. One moment there are houses, bright signs and tricycles moving between market stalls; the next, everything narrows to wet asphalt and pine.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>By six in the morning, cloud had erased the upper slopes. We drove with the windows open, listening for water in the gullies and the low mechanical complaint of buses climbing somewhere ahead.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is where the journal begins: not at a destination, but at the moment the map stops being useful.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Field note from the Cordillera: wet asphalt, pine, and cloud that erases the upper slopes.]]></excerpt:encoded>
+		<wp:post_id>301</wp:post_id>
+		<wp:post_date>2026-08-28 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-28 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>north-of-the-last-road</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="homepage-hero"><![CDATA[Homepage Hero]]></category>
+		<category domain="post_tag" nicename="leon-rivera"><![CDATA[Leon Rivera]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[201]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_location]]></wp:meta_key><wp:meta_value><![CDATA[Cordillera, Luzon]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_coordinates]]></wp:meta_key><wp:meta_value><![CDATA[17.0832° N
+120.8995° E]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_conditions]]></wp:meta_key><wp:meta_value><![CDATA[Rain / 18°C]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[The long road north]]></title>
+		<link>http://wp-theme-sierra-madre.local/the-long-road-north/</link>
+		<pubDate>Thu, 27 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=302</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Three days on the road north is long enough to forget what flat ground feels like. The rain arrives in sheets, then softens into mist that hangs between the pines.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Towns appear as brief brightness — a market, a church facade, steam from coffee — then fold back into the ridge. By the second afternoon we had stopped asking how much farther.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>What remains is the sound of water in the gullies and the sense that the mountains are reading us as carefully as we are reading them.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Three days through rain, mountain roads and towns that disappear into cloud before noon.]]></excerpt:encoded>
+		<wp:post_id>302</wp:post_id>
+		<wp:post_date>2026-08-27 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-27 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>the-long-road-north</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="journeys"><![CDATA[Journeys]]></category>
+		<category domain="post_tag" nicename="leon-rivera"><![CDATA[Leon Rivera]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_location]]></wp:meta_key><wp:meta_value><![CDATA[Cordillera, Luzon]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_coordinates]]></wp:meta_key><wp:meta_value><![CDATA[17.0832° N
+120.8995° E]]></wp:meta_value></wp:postmeta>
+		<wp:postmeta><wp:meta_key><![CDATA[sm_conditions]]></wp:meta_key><wp:meta_value><![CDATA[Rain / 18°C]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Before the rain]]></title>
+		<link>http://wp-theme-sierra-madre.local/before-the-rain/</link>
+		<pubDate>Wed, 26 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=303</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">There is an hour, just before the weather breaks, when the light turns metallic and the leaves stop moving.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We waited it out under a corrugated overhang, sharing coffee that had gone lukewarm, watching the valley gather itself.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[The hour when everything holds still.]]></excerpt:encoded>
+		<wp:post_id>303</wp:post_id>
+		<wp:post_date>2026-08-26 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-26 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>before-the-rain</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="field-notes"><![CDATA[Field Notes]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[The road to the coast]]></title>
+		<link>http://wp-theme-sierra-madre.local/the-road-to-the-coast/</link>
+		<pubDate>Tue, 25 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=304</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">The river does not hurry. It cuts, revises, and eventually arrives.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We followed it east until the air smelled of salt and the road finally remembered how to be level.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Following the river until it finds the sea.]]></excerpt:encoded>
+		<wp:post_id>304</wp:post_id>
+		<wp:post_date>2026-08-25 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-25 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>the-road-to-the-coast</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="field-notes"><![CDATA[Field Notes]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Sierra Madre]]></title>
+		<link>http://wp-theme-sierra-madre.local/sierra-madre-range/</link>
+		<pubDate>Mon, 24 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=305</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Named for the mother range that faces the Pacific, this journal takes its bearings from ridgelines that hold weather, memory, and the roads between them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>To write from here is to accept that the landscape was already speaking long before we arrived with notebooks.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[A range facing the Pacific. The spine of the eastern islands, and the reason this journal has a name.]]></excerpt:encoded>
+		<wp:post_id>305</wp:post_id>
+		<wp:post_date>2026-08-24 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-24 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>sierra-madre-range</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[205]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Aurora]]></title>
+		<link>http://wp-theme-sierra-madre.local/aurora/</link>
+		<pubDate>Sun, 23 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=306</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Aurora is where the mountain finally loosens its grip and the Pacific takes over the horizon.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fishermen mend nets in the same light that turns the foothills blue by late afternoon.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Where the road meets the sea.]]></excerpt:encoded>
+		<wp:post_id>306</wp:post_id>
+		<wp:post_date>2026-08-23 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-23 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>aurora</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Benguet]]></title>
+		<link>http://wp-theme-sierra-madre.local/benguet/</link>
+		<pubDate>Sat, 22 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=307</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">In Benguet the mornings begin above the clouds. The valley is a rumor until the sun burns through.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vegetable terraces step down the slopes like a patient argument with gravity.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Mornings above the clouds.]]></excerpt:encoded>
+		<wp:post_id>307</wp:post_id>
+		<wp:post_date>2026-08-22 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-22 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>benguet</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Ifugao]]></title>
+		<link>http://wp-theme-sierra-madre.local/ifugao/</link>
+		<pubDate>Fri, 21 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=308</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Ifugao keeps time in water. The terraces hold the season the way a journal holds a line.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Walk the dikes early and you hear the mountain before you see it.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Stone walls, rice, and weather that arrives on schedule.]]></excerpt:encoded>
+		<wp:post_id>308</wp:post_id>
+		<wp:post_date>2026-08-21 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-21 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>ifugao</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Quezon]]></title>
+		<link>http://wp-theme-sierra-madre.local/quezon/</link>
+		<pubDate>Thu, 20 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=309</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Quezon prefers the long curve. Coconut shade, roadside stalls, and the sense that haste is a foreign dialect.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We stopped more than we planned to. That was the point.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Coconut shade and roads that prefer the long curve.]]></excerpt:encoded>
+		<wp:post_id>309</wp:post_id>
+		<wp:post_date>2026-08-20 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-20 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>quezon</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[214]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Cagayan]]></title>
+		<link>http://wp-theme-sierra-madre.local/cagayan/</link>
+		<pubDate>Wed, 19 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=310</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Cagayan opens like a held breath — wider sky, longer horizons, fewer interruptions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It is a good place to end a journey, or to begin the next one without announcing it.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Wide sky at the edge of the archipelago.]]></excerpt:encoded>
+		<wp:post_id>310</wp:post_id>
+		<wp:post_date>2026-08-19 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-19 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>cagayan</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="places"><![CDATA[Places]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[215]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Weather, passing.]]></title>
+		<link>http://wp-theme-sierra-madre.local/weather-passing/</link>
+		<pubDate>Tue, 18 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=311</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">A photo essay is not a proof of place. It is a record of attention — three frames where light moved and the mountains did not.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Shot across a single wet morning in eastern Luzon, from the road to the ridge and into the hour after rain.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Light moves. The mountains stay. Three frames from the eastern range.]]></excerpt:encoded>
+		<wp:post_id>311</wp:post_id>
+		<wp:post_date>2026-08-18 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-18 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>weather-passing</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="photography"><![CDATA[Photography]]></category>
+		<category domain="post_tag" nicename="leon-rivera"><![CDATA[Leon Rivera]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[207]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[The people who know the mountains]]></title>
+		<link>http://wp-theme-sierra-madre.local/the-people-who-know-the-mountains/</link>
+		<pubDate>Mon, 17 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=312</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Mara Villanueva has spent thirty years listening to the ridgelines — not as metaphor, but as work.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We met before sunrise. She spoke about weather the way other people speak about family: with familiarity, respect, and the occasional joke.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[A morning with Mara Villanueva, and thirty years of listening to the ridgelines.]]></excerpt:encoded>
+		<wp:post_id>312</wp:post_id>
+		<wp:post_date>2026-08-17 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-17 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>the-people-who-know-the-mountains</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="people"><![CDATA[People]]></category>
+		<category domain="post_tag" nicename="mara-villanueva"><![CDATA[Mara Villanueva]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[210]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[At the table]]></title>
+		<link>http://wp-theme-sierra-madre.local/at-the-table/</link>
+		<pubDate>Sun, 16 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=313</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Breakfast in La Trinidad is an editorial meeting disguised as a meal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mountain rice, sharp coffee, and the understanding that the best stories start when nobody is performing yet.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Mountain rice, sharp coffee, and the stories that begin with a shared breakfast.]]></excerpt:encoded>
+		<wp:post_id>313</wp:post_id>
+		<wp:post_date>2026-08-16 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-16 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>at-the-table</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="culture"><![CDATA[Culture]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[211]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[In transit]]></title>
+		<link>http://wp-theme-sierra-madre.local/in-transit/</link>
+		<pubDate>Sat, 15 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=314</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">One hundred forty-two kilometres. Seven hours. Enough time for the landscape to change its mind twice.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Transit is not empty space between stories. It is where the notebook fills itself.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[142 kilometres, seven hours, and everything that happens between departure and arrival.]]></excerpt:encoded>
+		<wp:post_id>314</wp:post_id>
+		<wp:post_date>2026-08-15 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-15 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>in-transit</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="movement"><![CDATA[Movement]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[212]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Field Journal 01]]></title>
+		<link>http://wp-theme-sierra-madre.local/field-journal-01/</link>
+		<pubDate>Fri, 14 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=315</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Field Journal 01 gathers roads, ridges, and rain into a single issue — stories and photographs from across the islands.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>It is less a finished statement than an invitation to keep going.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Stories and photographs from across the islands.]]></excerpt:encoded>
+		<wp:post_id>315</wp:post_id>
+		<wp:post_date>2026-08-14 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-14 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>field-journal-01</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="issues"><![CDATA[Issues]]></category>
+		<wp:postmeta><wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key><wp:meta_value><![CDATA[213]]></wp:meta_value></wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[About]]></title>
+		<link>http://wp-theme-sierra-madre.local/about/</link>
+		<pubDate>Sat, 08 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://wp-theme-sierra-madre.local/?p=401</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">Sierra Madre is an independent field journal about landscapes, movement, memory and the people who understand a place by living inside it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We travel to pay attention. The homepage, the archive, and every long story are built for that pace.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[An independent field journal about landscapes, movement, memory and the people who understand a place by living inside it.]]></excerpt:encoded>
+		<wp:post_id>401</wp:post_id>
+		<wp:post_date>2026-08-08 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2026-08-08 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>about</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+</channel>
+</rss>

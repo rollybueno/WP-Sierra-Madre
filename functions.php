@@ -139,6 +139,21 @@ add_filter( 'render_block_core/post-title', function ( $content, $block, $instan
 	);
 }, 10, 3 );
 
+/*
+ * Story/page decks use post-excerpt. WordPress auto-generates one from content
+ * when empty, which duplicates the opening of the article. Only render when an
+ * editor has set an explicit excerpt.
+ */
+add_filter( 'render_block_core/post-excerpt', function ( $content ) {
+	if ( is_admin() || wp_is_serving_rest_request() || ! is_singular() ) {
+		return $content;
+	}
+	if ( ! has_excerpt() ) {
+		return '';
+	}
+	return $content;
+} );
+
 add_filter( 'render_block_core/post-date', function ( $content, $block ) {
 	$class_name = $block['attrs']['className'] ?? '';
 	if ( ! str_contains( $class_name, 'story-date' ) || ! is_singular( 'post' ) ) {
