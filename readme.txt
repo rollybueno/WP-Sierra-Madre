@@ -6,11 +6,13 @@ Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-An editorial block theme for field journals, long-form stories, photography, people, and places.
+A Full Site Editing theme for independent field journals — long roads, mountain weather, photo essays, and stories that take the long way home.
 
 == Description ==
 
-Sierra Madre is a Full Site Editing theme built with native WordPress blocks, block patterns, template parts, and theme.json.
+Sierra Madre is built for publications that treat travel as attention, not itinerary. It ships as a native block theme: theme.json tokens, template parts, and editorial patterns for a curated homepage, long-form singles, archives, search, and 404 — with room for photography sequences, place indexes, contributor pages, and occasional field letters.
+
+Typography pairs a display serif with a quiet sans and mono labels; the palette stays mist, moss, and signal yellow against paper and ink. Editors curate the front page through ordinary posts and categories — no custom post types, no bundled demo content on activation — so the journal grows with the road, not a starter kit.
 
 == Homepage content and curation ==
 
