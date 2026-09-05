@@ -13,6 +13,7 @@
   --places: var(--wp--preset--color--places);
   --muted: var(--wp--preset--color--muted);
   --label: var(--wp--preset--color--label);
+  --line: rgba(27, 29, 27, 0.25);
   --display: var(--wp--preset--font-family--display);
   --sans: var(--wp--preset--font-family--sans);
   --mono: var(--wp--preset--font-family--mono);

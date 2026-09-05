@@ -30,10 +30,16 @@ add_action( 'init', function () {
 		'home-dispatches'              => __( 'Homepage dispatches', 'sierra-madre' ),
 		'home-postscript'              => __( 'Homepage postscript', 'sierra-madre' ),
 		'story-intro-meta'             => __( 'Story field metadata', 'sierra-madre' ),
+		'story-byline'                 => __( 'Story byline', 'sierra-madre' ),
 		'story-article-section'        => __( 'Story article section with field note', 'sierra-madre' ),
 		'story-article-continuation'   => __( 'Story article continuation with field note', 'sierra-madre' ),
 		'story-full-image'             => __( 'Story full-width image', 'sierra-madre' ),
 		'story-diptych'                => __( 'Story image diptych', 'sierra-madre' ),
+		'archive-hero'                 => __( 'Archive hero', 'sierra-madre' ),
+		'archive-query'                => __( 'Archive query grid', 'sierra-madre' ),
+		'search-hero'                  => __( 'Search hero', 'sierra-madre' ),
+		'search-query'                 => __( 'Search results list', 'sierra-madre' ),
+		'error-stage'                  => __( '404 error stage', 'sierra-madre' ),
 		'page-intro'                   => __( 'Editorial page introduction', 'sierra-madre' ),
 		'page-panorama'                => __( 'Editorial panoramic image', 'sierra-madre' ),
 		'page-manifesto'               => __( 'Editorial manifesto', 'sierra-madre' ),
@@ -64,15 +70,27 @@ add_action( 'init', function () {
 }, 20 );
 
 /*
- * Pattern content is captured at registration. Re-render story field meta in post
- * context so sm_location / sm_coordinates / sm_conditions resolve per story.
+ * Pattern content is captured at registration. Re-render request-aware patterns
+ * so archive/search/404/story meta resolve in the current query context.
  */
 add_filter( 'render_block_core/pattern', function ( $block_content, $block ) {
-	if ( ( $block['attrs']['slug'] ?? '' ) !== 'sierra-madre/story-intro-meta' ) {
+	$slug = $block['attrs']['slug'] ?? '';
+	$dynamic = array(
+		'sierra-madre/story-intro-meta',
+		'sierra-madre/story-byline',
+		'sierra-madre/archive-hero',
+		'sierra-madre/search-hero',
+		'sierra-madre/error-stage',
+	);
+	if ( ! in_array( $slug, $dynamic, true ) ) {
+		return $block_content;
+	}
+	$file = get_theme_file_path( 'patterns/' . str_replace( 'sierra-madre/', '', $slug ) . '.php' );
+	if ( ! file_exists( $file ) ) {
 		return $block_content;
 	}
 	ob_start();
-	include get_theme_file_path( 'patterns/story-intro-meta.php' );
+	include $file;
 	return do_blocks( ob_get_clean() );
 }, 10, 2 );
 
@@ -120,6 +138,14 @@ add_filter( 'render_block_core/post-date', function ( $content, $block ) {
 	$minutes = max( 1, (int) ceil( str_word_count( wp_strip_all_tags( get_the_content() ) ) / 220 ) );
 	return preg_replace( '/(<\/time>)/', '$1<span aria-label="Estimated reading time"> / ' . $minutes . ' MIN</span>', $content, 1 );
 }, 10, 2 );
+
+/* Keep journal search focused on stories, not utility pages. */
+add_action( 'pre_get_posts', function ( $query ) {
+	if ( is_admin() || ! $query->is_main_query() || ! $query->is_search() ) {
+		return;
+	}
+	$query->set( 'post_type', 'post' );
+} );
 
 add_action( 'wp_enqueue_scripts', function () {
 	$theme = wp_get_theme();

@@ -92,6 +92,12 @@ Longer story layouts (aside + prose, full-bleed image, diptych) are available as
 
 Primary and footer Journal links use root-relative homepage anchors (`/#journeys`, `/#places`, and so on) so they work from single posts and other templates. Information links target `/about/` and the posts archive; create an About page at that path when you need those destinations live.
 
+== Archives, search, and 404 ==
+
+Category, tag, and posts-index views use the archive composition: large archive hero, category filter links (All / Field Notes / Photography / People / Culture when those categories exist), an asymmetric Query Loop grid, and pagination.
+
+Search uses a listing hero with the current query, an inline search field, and a dense result list. The 404 template is a full-bleed error stage with a return link to the front page.
+
 == Frequently Asked Questions ==
 
 = Does the theme register custom post types? =
@@ -103,6 +109,11 @@ No. Persistent content models belong in a plugin. The default homepage uses stan
 No. Demo content used during theme development is not imported automatically and is not required for activation.
 
 == Changelog ==
+
+= 0.2.2 =
+
+* Wired archive, home/index, search, and 404 templates to the editorial prototypes.
+* Restored story byline (words / photographs / date) and enriched the default page hero.
 
 = 0.2.1 =
 
