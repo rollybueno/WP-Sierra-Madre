@@ -110,6 +110,11 @@ No. Demo content used during theme development is not imported automatically and
 
 == Changelog ==
 
+= 0.2.3 =
+
+* Keep the front-page header absolute over the hero when the site uses latest posts (`home blog`).
+* Add a comments template part to page and single templates when discussion is open.
+
 = 0.2.2 =
 
 * Wired archive, home/index, search, and 404 templates to the editorial prototypes.

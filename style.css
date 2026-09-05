@@ -3,7 +3,7 @@ Theme Name: Sierra Madre
 Description: Native Full Site Editing baseline for the Sierra Madre field journal.
 Requires at least: 7.1
 Requires PHP: 8.0
-Version: 0.2.2
+Version: 0.2.3
 Text Domain: sierra-madre
 */
 
@@ -171,14 +171,14 @@ body.admin-bar .overlay { top: 32px; }
 .page-hero .page-intro-copy { grid-column: 8 / 13; font-size: 1.2rem; }
 .page-hero .page-intro-copy .wp-block-post-excerpt__excerpt { margin: 0; }
 
-/* Listing surfaces: blog, archives, search. */
-body:is(.blog, .archive, .search) { background: var(--wp--preset--color--paper); }
-body:is(.blog, .archive, .search) .site-header {
+/* Listing surfaces: blog index (not front), archives, search. */
+body:is(.blog:not(.home), .archive, .search) { background: var(--wp--preset--color--paper); }
+body:is(.blog:not(.home), .archive, .search) .site-header {
   position: relative;
   color: var(--ink);
   border-color: var(--line);
 }
-body:is(.blog, .archive, .search) .site-header.is-scrolled { position: fixed; }
+body:is(.blog:not(.home), .archive, .search) .site-header.is-scrolled { position: fixed; }
 body.error404 { background: var(--dark); }
 body.error404 .site-header:not(.is-scrolled) { color: #fff; }
 
@@ -372,6 +372,66 @@ body.error404 .site-header:not(.is-scrolled) { color: #fff; }
 
 /* 404 stage: pattern already outputs main.error-stage. */
 .error-stage img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Discussion / comments — constrained editorial form. */
+.journal-comments {
+  padding-block: var(--s5);
+  border-top: 1px solid var(--line);
+  width: min(calc(100% - var(--gutter) * 2), 660px);
+  margin-inline: auto;
+}
+.journal-comments .wp-block-comments-title {
+  font: 400 clamp(2rem, 4vw, 4rem) / 1 var(--display);
+  margin: 0 0 var(--s4);
+}
+.journal-comments .wp-block-comment-author-name,
+.journal-comments .wp-block-comment-author-name a {
+  font: 11px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.journal-comments .wp-block-comment-content {
+  font: clamp(1.05rem, 1.5vw, 1.2rem) / 1.7 var(--sans);
+}
+.journal-comments .wp-block-comment-content p { margin-block: 0.75em; }
+.journal-comments .wp-block-post-comments-form {
+  margin-top: var(--s4);
+}
+.journal-comments .comment-reply-title,
+.journal-comments .comment-form-comment label,
+.journal-comments .comment-form-author label,
+.journal-comments .comment-form-email label,
+.journal-comments .comment-form-url label {
+  font: 10px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.journal-comments .comment-form input[type="text"],
+.journal-comments .comment-form input[type="email"],
+.journal-comments .comment-form input[type="url"],
+.journal-comments .comment-form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 0.85rem 0;
+  font: 1.1rem / 1.5 var(--sans);
+  color: inherit;
+  border-radius: 0;
+}
+.journal-comments .comment-form textarea { min-height: 8rem; resize: vertical; }
+.journal-comments .comment-form .form-submit { margin-top: var(--s3); }
+.journal-comments .comment-form .form-submit input[type="submit"] {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: none;
+  padding: 0.5rem 0;
+  font: 10px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  cursor: pointer;
+  border-radius: 0;
+}
 
 @media (max-width: 768px) {
   .page-hero > .page-eyebrow,
