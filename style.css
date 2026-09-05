@@ -39,9 +39,6 @@ body.admin-bar .overlay { top: 32px; }
 .site-header > .wp-block-site-title { margin: 0; }
 .site-header > .wp-block-html { justify-self: end; }
 .site-header .wp-block-navigation { background: transparent; color: inherit; }
-.desktop-nav .wp-block-navigation__container { gap: 1.5rem; }
-.desktop-nav .wp-block-navigation-item { background: transparent; }
-.desktop-nav .wp-block-navigation-item__content { padding: 0; }
 
 .menu-panel .menu-navigation { display: block; width: 80%; margin-top: var(--s4); }
 .menu-panel .menu-navigation .wp-block-navigation__container { display: grid; grid-template-columns: 1fr 1fr; gap: 0; width: 100%; }
