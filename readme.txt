@@ -188,4 +188,4 @@ Bundled photographs are from StockSnap and are licensed CC0 1.0 Universal
 (https://creativecommons.org/publicdomain/zero/1.0/). Per-file photographer
 credits and source URLs are listed in assets/images/CREDITS.txt.
 
-screenshot.png is derived from hero-01.jpg for the WordPress.org theme directory.
+screenshot.jpg is the WordPress.org theme directory screenshot (1200×900).

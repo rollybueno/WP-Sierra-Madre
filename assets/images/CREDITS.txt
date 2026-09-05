@@ -78,6 +78,6 @@ Photo by Lukasz Szmigiel
 Source: https://stocksnap.io/photo/trees-forest-ZJOY89B3SM
 License: CC0 1.0 Universal
 
-screenshot.png (theme root)
-Derived from hero-01.jpg for the WordPress.org theme directory screenshot.
-License: CC0 1.0 Universal (source photograph)
+screenshot.jpg (theme root)
+Derived from the theme homepage for the WordPress.org theme directory screenshot.
+License: CC0 1.0 Universal (source photograph assets as credited above)

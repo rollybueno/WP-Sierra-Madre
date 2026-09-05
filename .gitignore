@@ -1,0 +1,11 @@
+# Local / tooling — not part of the theme
+.impeccable/
+.cursor/
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+
+# Static prototype and internal docs (kept on disk; not versioned)
+HTML/
+docs/
