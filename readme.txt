@@ -78,6 +78,20 @@ To build a page matching the editorial prototype:
 
 These are unsynced patterns: editing one page does not change another page. Activating the theme does not create pages or assign templates to existing content.
 
+== Single stories ==
+
+The single post template includes a full-bleed story hero, excerpt as deck, field metadata, post content, and a story footer with taxonomy and next-post navigation.
+
+Optional post meta (Custom Fields) for the intro metadata strip:
+
+* `sm_location` — place name (default: Cordillera, Luzon)
+* `sm_coordinates` — lat/long text; use a line break between values (default: 17.0832° N / 120.8995° E)
+* `sm_conditions` — weather or field conditions (default: Rain / 18°C)
+
+Longer story layouts (aside + prose, full-bleed image, diptych) are available as Sierra Madre patterns for editors to insert into post content.
+
+Primary and footer Journal links use root-relative homepage anchors (`/#journeys`, `/#places`, and so on) so they work from single posts and other templates. Information links target `/about/` and the posts archive; create an About page at that path when you need those destinations live.
+
 == Frequently Asked Questions ==
 
 = Does the theme register custom post types? =
@@ -89,6 +103,11 @@ No. Persistent content models belong in a plugin. The default homepage uses stan
 No. Demo content used during theme development is not imported automatically and is not required for activation.
 
 == Changelog ==
+
+= 0.2.1 =
+
+* Root-relative menu and footer Journal anchors so section links work off the front page.
+* Restored story intro field metadata (Location / Coordinates / Conditions) via optional post meta.
 
 = 0.2.0 =
 

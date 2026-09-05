@@ -1160,6 +1160,8 @@ body.overlay-open { overflow: hidden; }
 .contact-band h2{font:400 clamp(5rem,11vw,11rem)/.72 var(--display);margin:var(--s4) 0}
 .contact-band h2 em{font-weight:400;color:var(--dark)}
 .contact-band a{display:block;border-top:1px solid;padding-top:1rem;font:10px var(--mono);text-transform:uppercase}
+
+@media (max-width: 768px) {
 .error-message h1{font-size:22vw}
 .error-coord{display:none}
 .listing-hero{padding-top:7rem}
@@ -1200,3 +1202,4 @@ body.overlay-open { overflow: hidden; }
 .contributors{display:block}
 .contributor-image{margin:4rem 0}
 .contact-band h2{font-size:17vw}
+}

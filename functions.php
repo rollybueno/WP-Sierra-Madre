@@ -29,6 +29,7 @@ add_action( 'init', function () {
 		'home-photography'             => __( 'Homepage photography', 'sierra-madre' ),
 		'home-dispatches'              => __( 'Homepage dispatches', 'sierra-madre' ),
 		'home-postscript'              => __( 'Homepage postscript', 'sierra-madre' ),
+		'story-intro-meta'             => __( 'Story field metadata', 'sierra-madre' ),
 		'story-article-section'        => __( 'Story article section with field note', 'sierra-madre' ),
 		'story-article-continuation'   => __( 'Story article continuation with field note', 'sierra-madre' ),
 		'story-full-image'             => __( 'Story full-width image', 'sierra-madre' ),
@@ -61,6 +62,19 @@ add_action( 'init', function () {
 		register_block_pattern( $name, $properties );
 	}
 }, 20 );
+
+/*
+ * Pattern content is captured at registration. Re-render story field meta in post
+ * context so sm_location / sm_coordinates / sm_conditions resolve per story.
+ */
+add_filter( 'render_block_core/pattern', function ( $block_content, $block ) {
+	if ( ( $block['attrs']['slug'] ?? '' ) !== 'sierra-madre/story-intro-meta' ) {
+		return $block_content;
+	}
+	ob_start();
+	include get_theme_file_path( 'patterns/story-intro-meta.php' );
+	return do_blocks( ob_get_clean() );
+}, 10, 2 );
 
 /* Preserve a dynamic post title while applying the prototype's editorial line treatment. */
 add_filter( 'render_block_core/post-title', function ( $content, $block, $instance ) {
