@@ -36,7 +36,40 @@
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
-  document.querySelector('[data-search-form]').addEventListener('submit', e => e.preventDefault());
+  const searchForm = document.querySelector('[data-search-form]');
+  const searchStatus = document.querySelector('[data-search-status]');
+  searchForm?.addEventListener('submit', e => {
+    e.preventDefault();
+    const query = new FormData(searchForm).get('q')?.toString().trim() || '';
+    if (query.length < 2) {
+      if (searchStatus) {
+        searchStatus.hidden = false;
+        searchStatus.dataset.state = 'error';
+        searchStatus.textContent = 'Enter at least two characters to search the archive.';
+      }
+      return;
+    }
+    window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+  });
+
+  const lettersForm = document.querySelector('[data-letters-form]');
+  const lettersStatus = document.querySelector('[data-letters-status]');
+  lettersForm?.addEventListener('submit', e => {
+    e.preventDefault();
+    const email = new FormData(lettersForm).get('email')?.toString().trim() || '';
+    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!lettersStatus) return;
+    lettersStatus.hidden = false;
+    if (!valid) {
+      lettersStatus.dataset.state = 'error';
+      lettersStatus.textContent = 'That email does not look right. Check the address and try again.';
+      return;
+    }
+    lettersStatus.dataset.state = 'success';
+    lettersStatus.textContent = 'You are on the list. Field letters arrive when there is something worth sending.';
+    lettersForm.reset();
+  });
+
   addEventListener('scroll', () => header.classList.toggle('is-scrolled', scrollY > innerHeight * .65), { passive: true });
 
   const preview = document.querySelector('[data-place-image]');
